@@ -1,0 +1,8 @@
+<div class="row games-ctn">
+    <div class="col-6 col-sm-4 col-lg-3 game-card" ng-repeat="stream in streams track by $index">
+        <a href="https://www.twitch.tv/{{stream.user_name}}" target="_blank">
+            <img src="{{stream.thumbnail_url}}"/>
+            <label>{{ stream.title | limitTo: 40 }}{{stream.title.length > 40 ? '...' : ''}}</label>
+        </a>
+    </div>
+</div>

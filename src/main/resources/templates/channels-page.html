@@ -1,0 +1,15 @@
+<div class="row games-ctn">
+
+    <form ng-submit="searchChannel()" class="search-channel-form">
+        <input type="text" ng-model="channelQuery" />
+        <input type="submit" value="Search" />
+    </form>
+    <br/>
+
+    <div class="col-6 col-sm-4 col-lg-2 channel-card" ng-repeat="channel in channels track by $index">
+        <a href="https://www.twitch.tv/{{channel.broadcaster_login}}" target="_blank">
+            <img src="{{channel.thumbnail_url}}"/>
+            <label><div ng-class="{'online': channel.is_live}" class="channel-status"></div> {{channel.display_name}} ({{channel.broadcaster_language}}) </label>
+        </a>
+    </div>
+</div>

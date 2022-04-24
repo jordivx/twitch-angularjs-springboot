@@ -1,0 +1,78 @@
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.games-ctn {
+    width: 100%;
+}
+
+.game-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    background-color: #dedede;
+}
+
+.game-card img {
+    display: block;
+    margin: 0 auto 0.5em;
+}
+
+
+.channel-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    position: relative;
+}
+
+.channel-status {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    margin-right: 10px;
+}
+
+.channel-status.online {
+    background-color: green;
+}
+
+.channel-card:hover {
+    background-color: #dedede;
+}
+
+.channel-card img {
+    display: block;
+    margin: 0 auto 0.5em;
+    width: 80%;
+    height: auto;
+}
+.navbar {
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.search-channel-form {
+    text-align: center;
+    margin: 1em 0;
+}
+
+label {
+    color: black;
+}
